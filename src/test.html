@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            gap: 10px;
+        }
+
+        .photo-wrap{
+            grid-column: auto;
+            max-height: 300px;
+        }
+
+        .photo-wrap:last-of-type:nth-of-type(odd){
+            grid-column: span 2;
+            max-height: 600px;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .text-container{
+            padding: 0 300px;
+            font-size: 14px;
+        }
+
+        strong{
+            font-size: 40px;
+            line-height: 40px;
+            float: left;
+            padding-right: 10px;
+        }
+    </style>
+    <h1>This is a test</h1>
+
+    <div class="grid-container">
+        <div class="photo-wrap">
+            <img src="https://25.media.tumblr.com/tumblr_m472i9O3O31qlme4do1_500.jpg" alt="">
+        </div>
+        <div class="photo-wrap">
+            <img src="https://sm.mashable.com/mashable_sea/photo/default/man-fakes-death-cat-q6u_2z9w.png" alt="">
+        </div>
+        <div class="photo-wrap">
+            <img src="https://steamuserimages-a.akamaihd.net/ugc/952958837545085710/66EE7FE7365BF1365AFA9E8EB3C7447FF4DF81CD/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" alt="">
+        </div>
+
+    </div>
+
+    <div class="grid-container">
+        <div class="photo-wrap">
+            <img src="https://25.media.tumblr.com/tumblr_m472i9O3O31qlme4do1_500.jpg" alt="">
+        </div>
+        <div class="photo-wrap">
+            <img src="https://sm.mashable.com/mashable_sea/photo/default/man-fakes-death-cat-q6u_2z9w.png" alt="">
+        </div>
+        <div class="photo-wrap">
+            <img src="https://steamuserimages-a.akamaihd.net/ugc/952958837545085710/66EE7FE7365BF1365AFA9E8EB3C7447FF4DF81CD/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" alt="">
+        </div>
+        <div class="photo-wrap">
+            <img src="https://sm.mashable.com/mashable_sea/photo/default/man-fakes-death-cat-q6u_2z9w.png" alt="">
+        </div>
+
+    </div>
+
+    <div class="grid-container">
+        <div class="photo-wrap">
+            <img src="https://25.media.tumblr.com/tumblr_m472i9O3O31qlme4do1_500.jpg" alt="">
+        </div>
+
+    </div>
+
+    <h1 class="test2">
+        This is the second test
+    </h1>
+    
+    <div class="text-container">
+        <p><strong>L</strong>orem ipsum dolor sit, amet consectetur adipisicing elit. Rerum hic nostrum quasi, magni, suscipit dignissimos repellat saepe consectetur maxime sunt dolore. Delectus aut amet blanditiis fuga! Debitis delectus minima iusto!Lorem orem ipsum dolor sit, amet consectetur adipisicing elit. Rerum hic nostrum quasi, magni, suscipit dignissimos repellat saepe consectetur maxime sunt dolore. Delectus aut amet blanditiis fuga! Debitis delectus minima iusto!Lorem</p>
+    </div>
+</body>
+</html>
